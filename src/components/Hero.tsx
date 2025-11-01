@@ -47,6 +47,44 @@ const Hero = () => {
             </Button>
           </div>
 
+          {/* Trust Badges */}
+          <div className="w-full max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-400">
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 px-4 py-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/40 shadow-md">
+              <div className="flex items-center gap-2 text-sm md:text-base font-medium">
+                <div className="w-10 h-10 rounded-full bg-gradient-hero flex items-center justify-center shadow-sm">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
+                <span className="text-foreground">Zomato & Swiggy Integration</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm md:text-base font-medium">
+                <div className="w-10 h-10 rounded-full bg-gradient-hero flex items-center justify-center shadow-sm">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                </div>
+                <span className="text-foreground">Powerful Split Billing</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm md:text-base font-medium">
+                <div className="w-10 h-10 rounded-full bg-gradient-hero flex items-center justify-center shadow-sm">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                </div>
+                <span className="text-foreground">Deep Item Customization</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm md:text-base font-medium">
+                <div className="w-10 h-10 rounded-full bg-gradient-hero flex items-center justify-center shadow-sm">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <span className="text-foreground">Real-time Inventory</span>
+              </div>
+            </div>
+          </div>
+
           {/* Dashboard Image */}
           <div className="w-full max-w-5xl mt-12 animate-in fade-in zoom-in-95 duration-700 delay-400">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50">

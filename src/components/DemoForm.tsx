@@ -45,8 +45,8 @@ const DemoForm = () => {
 
   return (
     <section id="demo-section" className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      <div className="container max-w-4xl">
-        <Card className="p-8 md:p-12 shadow-2xl border-border/50">
+      <div className="container max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <Card className="p-8 md:p-12 shadow-2xl border-border/50 bg-gradient-card">
           <div className="text-center space-y-4 mb-10">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-hero mb-4">
               <Sparkles className="h-8 w-8 text-white" />

@@ -41,6 +41,7 @@ const roleSlides: RoleSlide[] = [
       "Track covers, tables, and order ageing in real time. Push menu updates and shift notes to every station without leaving your desk.",
     icon: UserCog,
     highlights: [
+      "Managerial Controls: Approve or deny void requests and cancellations directly from your dashboard",
       "Approval queue for voids, discounts, and complimentary items with an audit trail",
       "Live control center combining tables, kitchen tickets, and revenue variance",
       "Shift handover summaries auto-delivered to the next manager and frontline teams",
@@ -57,6 +58,7 @@ const roleSlides: RoleSlide[] = [
       "Handheld ordering keeps service moving while the system surfaces the next-best actions for every guest interaction.",
     icon: ClipboardList,
     highlights: [
+      "Deep Item Customization: Add notes like 'Extra Spicy,' 'Jain,' or 'Less Sugar' to any item—no more shouting at the kitchen",
       "Course-wise firing with instant kitchen status and run-list updates",
       "Guest-specific upsell nudges based on combos, stock, and order history",
       "Smart reminders when dishes are plated or follow-ups are overdue",
@@ -73,9 +75,12 @@ const roleSlides: RoleSlide[] = [
       "A Kitchen Display System keeps prep prioritized, highlights allergies, and removes paper tickets from the pass.",
     icon: ChefHat,
     highlights: [
+      "Crucial Notes, Front & Center: All item customizations ('Jain, Extra Spicy') appear in BIG, BOLD text",
+      "Smart Order Timers: Cards turn yellow, then red and flash based on time—see what's delayed at a glance",
+      "Loud Audio Alerts: A loud 'BEEP' for new orders so your kitchen never misses a ticket, even during peak rush",
+      "'All Day' Summary: See total active orders for bulk items (e.g., '15 Butter Naan,' '8 Paneer Tikka') to optimize prep",
       "Automatic course sequencing with colour-coded timers per station",
       "Instant reroutes when items are out of stock or delayed",
-      "Special instructions and allergies pinned to the top of every ticket",
     ],
     metrics: [
       { label: "Views", value: "Expo & station KDS" },
@@ -89,7 +94,9 @@ const roleSlides: RoleSlide[] = [
       "Handle dine-in, take-away, and delivery orders from one screen with built-in guardrails for approvals and settlement.",
     icon: CreditCard,
     highlights: [
-      "Split bills, tips, and payment adjustments in two taps",
+      "Powerful Split Billing: Split checks by item or divide equally in two taps",
+      "Flexible Partial Payments: Accept ₹500 by Card and ₹330 by UPI on the same bill",
+      "'Change Due' Calculator: Auto-calculate change for cash payments to eliminate mistakes",
       "Auto-sync loyalty, UPI, and card settlements at close of shift",
       "Variance alerts fire before shift closure to prevent revenue leakage",
     ],

@@ -28,7 +28,7 @@ const HowItWorks = () => {
   return (
     <section id="how-it-works" className="py-20 px-4">
       <div className="container">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-4 mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Get Up and Running in{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
@@ -44,11 +44,12 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center text-center space-y-4 group"
+              className="relative flex flex-col items-center text-center space-y-4 group animate-in fade-in slide-in-from-bottom-4 duration-700"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Connecting line */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary to-accent -z-10" />
+                <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary via-primary/50 to-accent -z-10 group-hover:via-primary transition-all duration-500" />
               )}
 
               {/* Icon container */}
