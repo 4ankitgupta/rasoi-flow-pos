@@ -44,27 +44,27 @@ const DemoForm = () => {
   };
 
   return (
-    <section id="demo-section" className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="demo-section" className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-        <Card className="p-8 md:p-12 shadow-2xl border-border/50 bg-gradient-card">
-          <div className="text-center space-y-4 mb-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-hero mb-4">
-              <Sparkles className="h-8 w-8 text-white" />
+        <Card className="p-6 sm:p-8 md:p-12 shadow-2xl border-border/50 bg-gradient-card">
+          <div className="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-10">
+            <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-hero mb-3 sm:mb-4">
+              <Sparkles className="h-7 w-7 sm:h-8 sm:w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
               Ready to{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
                 Streamline Your Restaurant?
               </span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               See for yourself how Rasoi Track can save you time, reduce costs, and boost your sales. 
               Schedule a personalized, no-obligation demo today.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Your Name *</Label>
                 <Input
@@ -73,7 +73,7 @@ const DemoForm = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="h-12"
+                  className="h-11 sm:h-12 text-base"
                 />
               </div>
               
@@ -85,12 +85,12 @@ const DemoForm = () => {
                   value={formData.restaurantName}
                   onChange={(e) => setFormData({ ...formData, restaurantName: e.target.value })}
                   required
-                  className="h-12"
+                  className="h-11 sm:h-12 text-base"
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone Number *</Label>
                 <Input
@@ -100,7 +100,7 @@ const DemoForm = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  className="h-12"
+                  className="h-11 sm:h-12 text-base"
                 />
               </div>
               
@@ -113,7 +113,7 @@ const DemoForm = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="h-12"
+                  className="h-11 sm:h-12 text-base"
                 />
               </div>
             </div>
@@ -121,12 +121,12 @@ const DemoForm = () => {
             <Button 
               type="submit" 
               size="lg"
-              className="w-full bg-gradient-hero hover:opacity-90 transition-opacity text-lg py-6 rounded-xl shadow-lg"
+              className="w-full bg-gradient-hero hover:opacity-90 transition-opacity text-base sm:text-lg py-5 sm:py-6 rounded-xl shadow-lg min-h-[48px]"
             >
               Get My Free Demo
             </Button>
             
-            <p className="text-sm text-center text-muted-foreground">
+            <p className="text-xs sm:text-sm text-center text-muted-foreground px-4">
               No credit card required. No commitment. Just a friendly conversation about how we can help your restaurant.
             </p>
           </form>

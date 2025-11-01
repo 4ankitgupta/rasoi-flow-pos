@@ -144,16 +144,16 @@ const Features = () => {
   }, [carouselApi]);
 
   return (
-    <section id="features" className="py-20 px-4 bg-muted/30">
+    <section id="features" className="py-12 sm:py-16 md:py-20 px-4 bg-muted/30">
       <div className="container">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             Everything You Need,{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               All in One Place
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Follow the journey each role takes inside the Rasoi POS and see how
             the system keeps everyone in sync.
           </p>
@@ -180,48 +180,48 @@ const Features = () => {
                       <div className="absolute right-8 top-1/2 h-32 w-32 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,198,164,0.55),transparent_70%)] opacity-0 blur-2xl transition-all duration-700 ease-out group-data-[active=true]:opacity-60 animate-pulse" />
                     </div>
 
-                    <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
-                      <div className="space-y-6 lg:flex-1">
+                    <div className="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-start">
+                      <div className="space-y-4 sm:space-y-6 lg:flex-1">
                         <div
-                          className="flex items-center gap-4 opacity-0 translate-y-3 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
+                          className="flex items-start sm:items-center gap-3 sm:gap-4 opacity-0 translate-y-3 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
                           style={{ transitionDelay: "80ms" }}
                         >
-                          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-hero shadow-md">
-                            <Icon className="h-7 w-7 text-white" />
+                          <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-hero shadow-md flex-shrink-0">
+                            <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                           </div>
-                          <div>
+                          <div className="flex-1 min-w-0">
                             <Badge
                               variant="secondary"
-                              className="uppercase tracking-[0.28em] text-xs"
+                              className="uppercase tracking-[0.24em] sm:tracking-[0.28em] text-[10px] sm:text-xs"
                             >
                               {slide.persona}
                             </Badge>
-                            <h3 className="mt-3 text-2xl md:text-3xl font-semibold">
+                            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-tight">
                               {slide.title}
                             </h3>
                           </div>
                         </div>
 
                         <p
-                          className="text-base md:text-lg text-muted-foreground max-w-2xl opacity-0 translate-y-2 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
+                          className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl opacity-0 translate-y-2 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
                           style={{ transitionDelay: "160ms" }}
                         >
                           {slide.description}
                         </p>
 
-                        <ul className="grid gap-4 md:grid-cols-2">
+                        <ul className="grid gap-3 sm:gap-4 md:grid-cols-2">
                           {slide.highlights.map((highlight, highlightIndex) => (
                             <li
                               key={highlight}
-                              className="flex items-start gap-3 rounded-xl border border-border/60 bg-background/70 p-4 shadow-sm opacity-0 translate-y-4 transition-all duration-500 group-data-[active=true]:border-primary/60 group-data-[active=true]:bg-primary/5 group-data-[active=true]:shadow-lg group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
+                              className="flex items-start gap-2 sm:gap-3 rounded-lg sm:rounded-xl border border-border/60 bg-background/70 p-3 sm:p-4 shadow-sm opacity-0 translate-y-4 transition-all duration-500 group-data-[active=true]:border-primary/60 group-data-[active=true]:bg-primary/5 group-data-[active=true]:shadow-lg group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
                               style={{
                                 transitionDelay: `${
                                   220 + highlightIndex * 90
                                 }ms`,
                               }}
                             >
-                              <Check className="mt-1 h-5 w-5 text-primary" />
-                              <span className="text-sm md:text-base leading-relaxed text-foreground">
+                              <Check className="mt-0.5 sm:mt-1 h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                              <span className="text-xs sm:text-sm md:text-base leading-relaxed text-foreground">
                                 {highlight}
                               </span>
                             </li>
@@ -229,26 +229,26 @@ const Features = () => {
                         </ul>
                       </div>
 
-                      <div className="lg:w-60 xl:w-72 space-y-4">
+                      <div className="lg:w-60 xl:w-72 space-y-3 sm:space-y-4">
                         <h4
-                          className="text-sm font-semibold uppercase tracking-wider text-muted-foreground opacity-0 translate-y-2 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
+                          className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-muted-foreground opacity-0 translate-y-2 transition-all duration-500 group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
                           style={{ transitionDelay: "260ms" }}
                         >
                           Snapshot
                         </h4>
-                        <div className="space-y-4">
+                        <div className="space-y-3 sm:space-y-4">
                           {slide.metrics.map((metric, metricIndex) => (
                             <div
                               key={`${slide.persona}-${metric.label}`}
-                              className="rounded-2xl border border-dashed border-border/60 bg-background/80 p-5 opacity-0 translate-y-4 transition-all duration-500 group-data-[active=true]:border-primary/50 group-data-[active=true]:bg-primary/5 group-data-[active=true]:shadow-lg group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
+                              className="rounded-xl sm:rounded-2xl border border-dashed border-border/60 bg-background/80 p-4 sm:p-5 opacity-0 translate-y-4 transition-all duration-500 group-data-[active=true]:border-primary/50 group-data-[active=true]:bg-primary/5 group-data-[active=true]:shadow-lg group-data-[active=true]:opacity-100 group-data-[active=true]:translate-y-0"
                               style={{
                                 transitionDelay: `${340 + metricIndex * 120}ms`,
                               }}
                             >
-                              <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
+                              <p className="text-[10px] sm:text-xs uppercase tracking-[0.20em] sm:tracking-[0.24em] text-muted-foreground">
                                 {metric.label}
                               </p>
-                              <p className="mt-2 text-base font-medium text-foreground">
+                              <p className="mt-1.5 sm:mt-2 text-sm sm:text-base font-medium text-foreground">
                                 {metric.value}
                               </p>
                             </div>
@@ -272,12 +272,12 @@ const Features = () => {
           />
         </Carousel>
 
-        <div className="mt-10 flex flex-col items-center gap-6">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-background shadow-sm">
+        <div className="mt-8 sm:mt-10 flex flex-col items-center gap-4 sm:gap-6 px-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-muted-foreground text-center">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-background shadow-sm flex-shrink-0">
               ↔︎
             </span>
-            <span>
+            <span className="max-w-md">
               Drag, swipe, or use the arrows to explore each role in the POS
               journey.
             </span>

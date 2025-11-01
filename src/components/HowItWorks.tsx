@@ -26,16 +26,16 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-20 px-4">
+    <section id="how-it-works" className="py-12 sm:py-16 md:py-20 px-4">
       <div className="container">
-        <div className="text-center space-y-4 mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16 px-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             Get Up and Running in{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               3 Simple Steps
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             From setup to success, we make it easy
           </p>
         </div>
@@ -53,17 +53,17 @@ const HowItWorks = () => {
               )}
 
               {/* Icon container */}
-              <div className="relative w-28 h-28 rounded-2xl bg-gradient-hero flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <step.icon className="h-12 w-12 text-white" />
-                <div className="absolute -top-3 -right-3 w-12 h-12 rounded-full bg-accent flex items-center justify-center font-bold text-white text-lg shadow-md">
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-xl sm:rounded-2xl bg-gradient-hero flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <step.icon className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
+                <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent flex items-center justify-center font-bold text-white text-base sm:text-lg shadow-md">
                   {step.number}
                 </div>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-semibold mt-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 sm:mt-6">
                 {step.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed max-w-xs">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xs px-2 sm:px-0">
                 {step.description}
               </p>
             </div>
